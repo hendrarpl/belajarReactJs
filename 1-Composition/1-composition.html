@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    
+    <script>
+        function getProfilePicture(userId) {
+            return `https://avatars.githubusercontent.com/u/${userId}`;
+        }
+
+        function getProfileLink(username) {
+            return `https://github.com/${username}`;
+        }
+
+
+        function getGithubInfo(username, userId) {
+            return {
+                profilePicture: getProfilePicture(userId),
+                profileLink: getProfileLink(username),
+            };
+        }
+
+        console.log(getGithubInfo('hendrarpl', 111669831))
+    </script>
+</body>
+
+</html>
